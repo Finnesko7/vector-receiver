@@ -45,6 +45,6 @@ const validate = (req, res) => {
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-        res.status(500).json(errors)
+        res.status(422).json(errors)
     }
 }
